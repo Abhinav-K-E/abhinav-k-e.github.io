@@ -11,7 +11,6 @@
 
 html{
     scroll-behavior: smooth;
-    -webkit-transform: translate3d(0,0,0);
 }
 
 ::-webkit-scrollbar{
@@ -40,6 +39,7 @@ a{
 }
 
 .sec-1{
+    position: relative;
     width: 100%;
     height: 100vh;
     background:linear-gradient( rgba(0, 0, 0, .6) 100%, rgba(0, 0, 0, .6)100%), url(./assets/bg01.jpg);
@@ -122,10 +122,6 @@ a{
     border: 2px solid var(--blacky);
     background-color: var(--bg);
     transition: all .5s ease-in-out;
-}
-
-.back-top{
-    display: none;
 }
 
 /*section-2*/
