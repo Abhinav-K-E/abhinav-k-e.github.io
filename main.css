@@ -11,14 +11,8 @@
 
 html{
     scroll-behavior: smooth;
+    -webkit-transform: translate3d(0,0,0);
 }
-
-html {
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-}
-  
 
 ::-webkit-scrollbar{
     width: 0;
@@ -137,16 +131,13 @@ a{
 /*section-2*/
 
 .sec-2{
-    position: relative;
     width: 100%;
     height: 100%;
-    background-color: #DFDFDF;
     padding: 20px;
     background:linear-gradient( rgba(0, 0, 0, .6) 100%, rgba(0, 0, 0, .6)100%), url(./assets/bg02.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    scroll-behavior: smooth;
 }
 
 .nav-bar{
@@ -243,12 +234,6 @@ a{
 }
 
 @media(max-width:610px){
-    .pic{
-        display: none;
-    }
-    #preloader{
-        background-size: 35%;
-    }
     .txt{
         font-size: 60px;
     }
