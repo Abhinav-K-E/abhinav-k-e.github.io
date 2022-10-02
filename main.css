@@ -311,21 +311,3 @@ a{
     height: 100%;
     z-index: 100;
 }
-
-/*starting animation*/
-
-.sec-1{
-    animation-name: down;
-    animation-duration: 2s;
-    transition: transform 2s ease;
-
-}
-
-@keyframes down {
-    0%{
-        transform: translate(0px ,-500px);
-    }
-    100%{
-        transform: translate(0px);
-    }
-}
