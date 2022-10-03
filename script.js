@@ -1,1 +1,0 @@
-ScrollReveal().reveal(".works" ,{duration: 2000 , easing: "ease-in-out" , interval: 100 ,scale: 0.85})
