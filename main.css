@@ -240,9 +240,9 @@ a{
     body{
         zoom: 90%;
     }
-    /*.sec-1{
+    .sec-1{
         min-height: 900px;
-    }*/
+    }
     .hero{
         margin-top: 0px;
     }
@@ -266,10 +266,10 @@ a{
     .txt{
         font-size: 55px;
     }
-    /*
+    
     .sec-1{
         min-height: 950px;
-    }*/
+    }
 
 }
 
