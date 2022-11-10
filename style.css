@@ -29,6 +29,7 @@ a{
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
@@ -221,5 +222,22 @@ a{
     .txt{
         font-size: 30px;
     }
+}
+
+
+/* implementing dark mode */
+
+.dark-mode{
+    transition: all .6s;
+    background-color: #0f0f0ff0;
+    color: #fff;
+}
+
+
+
+button{
+    background-color: transparent;
+    border: 0;
+    margin-top: 15px;
 }
 
