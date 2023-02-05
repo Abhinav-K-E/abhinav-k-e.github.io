@@ -10,6 +10,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -25,7 +27,7 @@
         <dev class="header" id="home">
             <div class="head">
                 <span class="name">
-                    Hey there, I’m Abhinav
+                    Hey there, I'm <span class="auto-type"></span> 
                 </span><br>
                 Freelance UI Designer &
                 <br>Web Developer
@@ -210,6 +212,12 @@
                     document.getElementById("lab02").innerHTML="Please enter email";
                 }
             }
+        })
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Abhinav"], // adding data to be display
+            typeSpeed : 200,
+            backSpeed :200,
         })
     </script>
 </body>

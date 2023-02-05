@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/brandon-grotesque');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,100&display=swap');
 
 
 * {
@@ -6,8 +6,17 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
 }
 
+:root{
+    --primary:#1D4ED8;
+    --text :#262626;
+    --subtxt:#A3A3A3;
+    --primary02:#7C3AED;
+    --green:#059669;
+}
 
 .wrapper {
     width: 100%;
@@ -15,7 +24,6 @@
     overflow: auto;
     overflow-x: hidden;
     background-color: #fff;
-    font-family: 'Brandon Grotesque', sans-serif;
     
 }
 
@@ -29,7 +37,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 24px;
     /* border-bottom: 1px solid rgba(38, 31, 34, 0.1); */
 }
@@ -42,22 +50,22 @@
 }
 
 .links li{
-    margin-right: 48px;
     font-size: 16px;
     font-weight: 600;
     border: 2px solid transparent;
     border-radius: 10px;
     padding: 4px 8px;
+    color: var(--primary);
+    margin: 30px;
 }
 
 a{
     text-decoration: none;
-    color: #261F22;
 }
 
 .links li:hover{
-    border: 2px solid #FC3A79;
-    background-color: rgba(252, 58, 121, .3);
+    border: 2px solid var(--primary);
+    background-color: #1d4fd845;
     transition-duration: .4s;
     transition-timing-function: ease-in;
 }
@@ -69,8 +77,8 @@ a{
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 24px;
 }
@@ -83,28 +91,35 @@ a{
 
 .head span{
     font-weight: 200;
-    font-size: 50px;
-    color: rgba(252, 58, 121, 1);
+    font-size: 45px;
+    color: var(--primary);
+    margin-bottom: 30px;
 }
 
 .btn{
-    background: linear-gradient(270deg, #FC3A79 -3.75%, #FE572E 100%);
+    background: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
-    border-radius: 100px;
-    margin-top: 20px;
+    border-radius: 120px;
+    margin-top: 40px;
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     box-shadow: 0px 267px 468px rgba(44, 44, 44, 0.04),
                  0px 33.4325px 58.6009px rgba(44, 44, 44, 0.02);
     cursor: pointer;
+    
+}
+
+.btn svg{
+    margin-left: 10px;
+    width: 24px;
 }
 
 .btn:hover{
-    background: linear-gradient(270deg, #fc3a77cc -3.75%, #fe582edd 100%);
+    background:  #1d4fd8cf;
 }
 
 /*work*/
@@ -126,13 +141,14 @@ a{
 .head-work .main-name{
     font-size: 40px;
     font-weight: 600;
+    color: var(--text);
 }
 
-.head-work .sub{
+.head-work .sub-name{
     font-size: 15px;
-    font-weight: 400;
-    color: rgba(38, 31, 34, 0.75);
-    margin-top: 24px;
+    font-weight: 300;
+    color: var(--subtxt);
+    margin-top: 20px;
 }
 
 .work-sec{
@@ -156,6 +172,8 @@ a{
     top: 20px;
     left: 20px;
     font-size: 14px;
+    color: var(--text);
+    font-weight: 300;
 }
 
 .work:hover .info{
@@ -199,12 +217,13 @@ a{
 .contact-head .main-name{
     font-size: 40px;
     font-weight: 600;
+    color: var(--text);
 }
 
 .contact-head .sub{
     font-size: 15px;
-    font-weight: 400;
-    color: rgba(38, 31, 34, 0.75);
+    font-weight: 300;
+    color: var(--subtxt);
     margin-top: 24px;
     padding: 24px;
 }
@@ -224,6 +243,7 @@ a{
     display: flex;
     flex-direction: column;
     padding-right: 24px;
+    color: var(--text);
 }
 
 .txt{
@@ -234,7 +254,7 @@ a{
 .form-sec input{
     margin-top: 10px;
     width: 100%;
-    height: 40px;
+    height: 50px;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -243,14 +263,13 @@ a{
 }
 
 .form-sec input[type="submit"]{
-    background: linear-gradient(270deg, #FC3A79 -3.75%, #FE572E 100%);
+    background: var(--primary);
     height: 50px;
-    font-family: 'Brandon Grotesque', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
-    border-radius: 100px;
+    border-radius: 10px;
     margin-top: 20px;
     color: #fff;
     font-size: 18px;
