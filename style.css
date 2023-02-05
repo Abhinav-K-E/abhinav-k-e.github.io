@@ -24,13 +24,15 @@
     overflow: auto;
     overflow-x: hidden;
     background-color: #fff;
-    
 }
 
 
 /*navbar*/
 
 .nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: #fff;
     box-shadow: 1px 1px 10px #ececec27;
     width: 100%;
@@ -50,7 +52,7 @@
 }
 
 .links li{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -77,23 +79,23 @@ a{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 24px;
 }
 
 .head{
+    margin-top: 60px;
     font-size: 60px;
     font-weight: 600;
     text-align: center;
 }
 
 .head span{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 45px;
     color: var(--primary);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .btn{
@@ -329,7 +331,7 @@ textarea{
 /*Footer*/
 
 .footer{
-    margin-top: 80px;
+    margin-top: 40px;
     width: 100%;
     height: 100px;
     padding: 24px;
@@ -375,6 +377,12 @@ textarea{
     .form-sec{
         padding: 24px;
     }
+    .head{
+        font-size: 45px;
+    }
+    .head span{
+        font-size: 35px;
+    }
 }
 
 @media(max-width:540px){
@@ -386,6 +394,14 @@ textarea{
 @media(min-width:1440){
     #btn-sub{
         width: 55px;
+    }
+}
+
+@meadia(max-width:400px){
+    .work .info{
+        font-size: 13px;
+        top: 10px;
+        left: 10px;
     }
 }
 
