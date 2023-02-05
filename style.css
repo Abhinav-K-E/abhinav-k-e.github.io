@@ -355,6 +355,10 @@ textarea{
     transition-duration: .5s;
 }
 
+.hide{
+    display: none;
+}
+
 @media(max-width:860px){
     .work-sec{
         grid-template-columns: 1fr;
@@ -382,6 +386,14 @@ textarea{
     }
     .head span{
         font-size: 35px;
+    }
+
+    .hide{
+        display: block;
+    }
+
+    .not{
+        display: none;
     }
 }
 
