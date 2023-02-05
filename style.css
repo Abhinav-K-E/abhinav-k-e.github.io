@@ -409,7 +409,26 @@ textarea{
     }
 }
 
-@meadia(max-width:400px){
+@media(max-width:444px){
+    .head span{
+        font-size: 29px;
+    }
+}
+
+@media(max-width:380px){
+    .head span{
+        font-size: 22px;
+    }
+    .head{
+        font-size: 43px;
+    }
+    .nav li{
+        font-size: 14px;
+        margin: 20px;
+    }
+}
+
+@media(max-width:400px){
     .work .info{
         font-size: 13px;
         top: 10px;
