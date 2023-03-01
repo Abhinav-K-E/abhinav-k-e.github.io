@@ -443,7 +443,7 @@ textarea{
 @media(max-width:540px){
     .head{
         font-size: 45px;
-        margin-top: -150px;
+        margin-top: -180px;
     }
     .nav li{
         margin: 10px;
